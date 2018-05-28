@@ -40,7 +40,6 @@ def main():
 
     # TODO:
     # - Variable frame rate.
-    # - Frames as a collection of unit vectors, actual rotated drawing.
 
     gdt = 1e-4
     iters = 1e-2/gdt
@@ -128,12 +127,6 @@ def main():
             terminal.echo(vec_label(frame.i))
             terminal.echo(vec_label(frame.j))
             terminal.echo(vec_label(frame.k))
-
-        # terminal.echo(vec_label(self.r))
-        # terminal.echo(vec_label(self.i))
-        # terminal.echo(vec_label(self.j))
-        # terminal.echo(vec_label(self.k))
-
 
         screen.blit(surf, (0, 0))
         pg.display.flip()
